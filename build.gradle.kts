@@ -28,6 +28,10 @@ compose.desktop {
     application {
         mainClass = "MainKt"
         nativeDistributions {
+            macOS { iconFile.set(project.file("logo.icns")) }
+            windows { iconFile.set(project.file("logo.ico")) }
+            linux { iconFile.set(project.file("logo.png")) }
+
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "BookStr"
             packageVersion = "1.0.0"

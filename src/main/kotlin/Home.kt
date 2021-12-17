@@ -1,19 +1,13 @@
 import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
-
-class Home
-{
-
-}
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun HomePage()
@@ -22,43 +16,83 @@ fun HomePage()
   Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.End) //Row 1
   {
     Column { //Column 1
-      Text("Yaoi")
+      Modifier.padding(10.dp)
+      Text("Yaoi", fontSize = 20.sp)
       Image(
-        painterResource("the-demon-wants-to-be-a-good-boy-yaoi-manga.jpeg"),
-        contentDescription = "Yaoi",
-        modifier = Modifier.fillMaxSize()
+        painter = painterResource("yaoi.jpeg"),
+        contentDescription = "The Demon Wants to Be a Good boy",
+        modifier = Modifier.width(200.dp).height(400.dp).padding(top = 1.dp)
       )
     }
+
     Column { //Column 2
-      Text("Doujinshi")
+      Text("Action", fontSize = 20.sp)
       Image(
-        painterResource("the-demon-wants-to-be-a-good-boy-yaoi-manga.jpeg"),
-        contentDescription = "Doujinshi",
-        modifier = Modifier.fillMaxSize()
+        painter = painterResource("Action.png"),
+        contentDescription = "The Demon Wants to Be a Good boy",
+        modifier = Modifier.width(200.dp).height(400.dp).padding(top = 1.dp)
       )
     }
     Column { //Column 3
-      Text("Shounen Ai")
+      Text("Adventure", fontSize = 20.sp)
       Image(
-        painterResource("the-demon-wants-to-be-a-good-boy-yaoi-manga.jpeg"),
-        contentDescription = "Shounen Ai",
-        modifier = Modifier.fillMaxSize()
+        painter = painterResource("Adventure.jpeg"),
+        contentDescription = "The Demon Wants to Be a Good boy",
+        modifier = Modifier.width(200.dp).height(600.dp).padding(top = 1.dp)
       )
     }
+
     Column { //Column 4
-      Text("Shoujo")
+      Text("Comedy", fontSize = 20.sp)
       Image(
-        painterResource("the-demon-wants-to-be-a-good-boy-yaoi-manga.jpeg"),
-        contentDescription = "Shoujo",
-        modifier = Modifier.fillMaxSize()
+        painter = painterResource("Comedy.jpeg"),
+        contentDescription = "The Demon Wants to Be a Good boy",
+        modifier = Modifier.width(200.dp).height(400.dp).padding(top = 1.dp)
       )
     }
+
     Column { //Column 5
-      Text("Yuri")
+      Text("Fantasy", fontSize = 20.sp)
       Image(
-        painterResource("the-demon-wants-to-be-a-good-boy-yaoi-manga.jpeg"),
-        contentDescription = "Yuri",
-        modifier = Modifier.fillMaxSize()
+        painter = painterResource("Fantasy.jpeg"),
+        contentDescription = "The Demon Wants to Be a Good boy",
+        modifier = Modifier.width(200.dp).height(400.dp).padding(top = 1.dp)
+      )
+    }
+
+    Column { //Column 5
+      Text("Sci-Fi", fontSize = 20.sp)
+      Image(
+        painter = painterResource("Sci-Fi.jpeg"),
+        contentDescription = "The Demon Wants to Be a Good boy",
+        modifier = Modifier.width(200.dp).height(400.dp).padding(top = 1.dp)
+      )
+    }
+
+    Column { //Column 5
+      Text("Horror", fontSize = 20.sp)
+      Image(
+        painter = painterResource("Horro.jpeg"),
+        contentDescription = "The Demon Wants to Be a Good boy",
+        modifier = Modifier.width(200.dp).height(400.dp).padding(top = 1.dp)
+      )
+    }
+
+    Column { //Column 5
+      Text("Drama", fontSize = 20.sp)
+      Image(
+        painter = painterResource("Drama.jpeg"),
+        contentDescription = "The Demon Wants to Be a Good boy",
+        modifier = Modifier.width(200.dp).height(400.dp).padding(top = 1.dp)
+      )
+    }
+
+    Column { //Column 5
+      Text("Supernatural", fontSize = 20.sp)
+      Image(
+        painter = painterResource("Supernatural.jpeg"),
+        contentDescription = "The Demon Wants to Be a Good boy",
+        modifier = Modifier.width(200.dp).height(400.dp).padding(top = 1.dp)
       )
     }
   }
