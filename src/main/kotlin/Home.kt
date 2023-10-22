@@ -33,6 +33,7 @@ fun HomePage()
         modifier = Modifier.width(200.dp).height(400.dp).padding(top = 1.dp)
       )
     }
+
     Column { //Column 3
       Text("Adventure", fontSize = 20.sp)
       Image(
